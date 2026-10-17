@@ -1,0 +1,48 @@
+*.log
+.DS_Store
+.env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+/.codex
+/.cursor/
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+node_modules/
+/public/build
+/public/fonts-manifest.dev.json
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+_ide_helper.php
+Homestead.json
+Homestead.yaml
+Thumbs.db
+
+# Frontend React
+frontend-react/dist/
+frontend-react/node_modules/
+
+# Mobile App (separate repo)
+BookingApp/
+PetEmergency/
+
+# Python & AI Services
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+.venv/
+
+# SQLite & Local DB
+*.sqlite
+*.sqlite-journal
+*.sqlite3
