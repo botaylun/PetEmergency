@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="1440" height="1024" style="background:#0F172A;font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <filter id="map-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+    <filter id="pulse-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#EF4444" flood-opacity="0.6" />
+    </filter>
+    <linearGradient id="emergency-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="50%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#B91C1C"/>
+    </linearGradient>
+    <linearGradient id="call-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- TOP EMERGENCY STATUS BAR -->
+  <g id="Emergency-Banner">
+    <rect width="1440" height="56" fill="url(#emergency-bar)"/>
+    <circle cx="48" cy="28" r="8" fill="#FEE2E2"/>
+    <circle cx="48" cy="28" r="4" fill="#DC2626"/>
+    <text x="68" y="34" font-size="16" font-weight="800" fill="#FFFFFF">🚨 ĐANG PHÁT TÍN HIỆU CẤP CỨU SOS THÚ CƯNG 24/7</text>
+    <text x="560" y="34" font-size="14" fill="#FEE2E2">Hệ thống đang điều hướng bác sĩ & chuẩn bị giường hồi sức tại phòng khám gần nhất</text>
+    <rect x="1300" y="12" width="100" height="32" rx="16" fill="#000000" fill-opacity="0.3"/>
+    <text x="1350" y="32" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">HỦY SOS</text>
+  </g>
+
+  <!-- MAIN CONTAINER: MAP BACKGROUND + LEFT OVERLAY CARD -->
+  <g id="Map-Viewport" transform="translate(0, 56)">
+
+    <!-- VECTOR MAP BASE (STYLIZED DARK MAP) -->
+    <rect width="1440" height="968" fill="#1E293B"/>
+
+    <!-- Map Water Features (Hồ Tây, Hồ Trúc Bạch style) -->
+    <path d="M 900 100 Q 1150 150 1250 350 T 1440 500 L 1440 0 L 850 0 Z" fill="#0F172A" fill-opacity="0.6"/>
+    <text x="1100" y="200" font-size="20" font-weight="700" fill="#334155" opacity="0.4">HỒ TÂY</text>
+
+    <!-- Roads Vector -->
+    <g stroke="#334155" stroke-width="12" stroke-linecap="round" fill="none">
+      <path d="M 0 350 Q 500 380 900 450 T 1440 400" />
+      <path d="M 450 0 L 450 968" stroke-width="14"/>
+      <path d="M 850 0 Q 900 500 800 968" stroke-width="10"/>
+      <path d="M 200 968 L 1200 100" stroke-width="8"/>
+      <path d="M 100 600 L 1300 750" stroke-width="6"/>
+      <path d="M 600 200 L 1100 900" stroke-width="6"/>
+    </g>
+
+    <!-- Road secondary -->
+    <g stroke="#475569" stroke-width="4" stroke-linecap="round" fill="none">
+      <path d="M 0 350 Q 500 380 900 450 T 1440 400" />
+      <path d="M 450 0 L 450 968" />
+    </g>
+
+    <!-- ROUTE PATH (EMERGENCY DISPATCH ROUTE) -->
+    <path d="M 680 520 Q 750 490 820 460 T 940 380" fill="none" stroke="#EF4444" stroke-width="6" stroke-dasharray="10 6"/>
+    <path d="M 680 520 Q 750 490 820 460 T 940 380" fill="none" stroke="#FCA5A5" stroke-width="2"/>
+
+    <!-- ETA TOOLTIP ON ROUTE -->
+    <g transform="translate(760, 430)" filter="url(#map-shadow)">
+      <rect width="130" height="36" rx="18" fill="#0F172A" stroke="#EF4444" stroke-width="2"/>
+      <text x="65" y="22" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">⏱ 4 phút (1.2 km)</text>
+    </g>
+
+    <!-- USER SOS LOCATION PIN (RED GLOW) -->
+    <g id="User-Pin" transform="translate(680, 520)" filter="url(#pulse-glow)">
+      <circle cx="0" cy="0" r="36" fill="#EF4444" fill-opacity="0.2"/>
+      <circle cx="0" cy="0" r="22" fill="#EF4444" fill-opacity="0.4"/>
+      <circle cx="0" cy="0" r="14" fill="#EF4444" stroke="#FFFFFF" stroke-width="3"/>
+      <text x="0" y="5" font-size="12" text-anchor="middle">📍</text>
+      <!-- Label -->
+      <g transform="translate(-75, 24)" filter="url(#map-shadow)">
+        <rect width="150" height="32" rx="8" fill="#EF4444"/>
+        <text x="75" y="20" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Vị trí bé Miu Miu</text>
+      </g>
+    </g>
+
+    <!-- NEAREST CLINIC PIN (GREEN HOSPITAL) -->
+    <g id="Clinic-Pin-1" transform="translate(940, 380)" filter="url(#map-shadow)">
+      <circle cx="0" cy="0" r="28" fill="#10B981" stroke="#FFFFFF" stroke-width="3"/>
+      <text x="0" y="8" font-size="20" text-anchor="middle">🏥</text>
+      <rect x="-85" y="-54" width="170" height="42" rx="10" fill="#0F172A" stroke="#10B981" stroke-width="2"/>
+      <text x="0" y="-34" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">PetCare 24h Ba Đình</text>
+      <text x="0" y="-18" font-size="11" font-weight="600" fill="#86EFAC" text-anchor="middle">Sẵn sàng đón bệnh • BS Trực</text>
+    </g>
+
+    <!-- OTHER CLINICS AROUND -->
+    <g id="Clinic-Pin-2" transform="translate(480, 240)">
+      <circle cx="0" cy="0" r="20" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2"/>
+      <text x="0" y="6" font-size="14" text-anchor="middle">🏥</text>
+    </g>
+    <g id="Clinic-Pin-3" transform="translate(1120, 680)">
+      <circle cx="0" cy="0" r="20" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2"/>
+      <text x="0" y="6" font-size="14" text-anchor="middle">🏥</text>
+    </g>
+
+    <!-- DOCTOR ON-CALL PIN MOVING -->
+    <g id="Doctor-Pin" transform="translate(860, 420)" filter="url(#map-shadow)">
+      <circle cx="0" cy="0" r="22" fill="#6366F1" stroke="#FFFFFF" stroke-width="2"/>
+      <text x="0" y="7" font-size="16" text-anchor="middle">🩺</text>
+      <g transform="translate(-60, 26)">
+        <rect width="120" height="24" rx="12" fill="#1E293B" stroke="#6366F1" stroke-width="1"/>
+        <text x="60" y="16" font-size="10" font-weight="700" fill="#E0E7FF" text-anchor="middle">BS. Phạm Thị Mai (Di chuyển)</text>
+      </g>
+    </g>
+
+    <!-- CLUSTER BADGE -->
+    <g id="Cluster-Marker" transform="translate(1200, 280)">
+      <circle cx="0" cy="0" r="26" fill="#F59E0B" stroke="#FEF3C7" stroke-width="3"/>
+      <text x="0" y="6" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle">+14</text>
+      <text x="0" y="38" font-size="11" font-weight="600" fill="#FDE68A" text-anchor="middle">Phòng khám</text>
+    </g>
+
+    <!-- LEFT FLOAT CARD: EMERGENCY DISPATCH CONTROLLER -->
+    <g id="Emergency-Control-Card" transform="translate(36, 36)" filter="url(#map-shadow)">
+      <rect width="460" height="840" rx="20" fill="#FFFFFF"/>
+      
+      <!-- Card Header -->
+      <g transform="translate(28, 28)">
+        <rect width="130" height="28" rx="14" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
+        <text x="65" y="18" font-size="12" font-weight="700" fill="#DC2626" text-anchor="middle">🚨 MỨC ĐỘ NGUY CẤP</text>
+        <text x="0" y="58" font-size="22" font-weight="800" fill="#0F172A">Ca Cấp Cứu #SOS-8921</text>
+        <text x="0" y="80" font-size="13" fill="#64748B">Tạo lúc 22:40 • Đã phát tín hiệu 2 phút trước</text>
+      </g>
+
+      <line x1="28" y1="130" x2="432" y2="130" stroke="#F1F5F9" stroke-width="1"/>
+
+      <!-- Pet Info Box -->
+      <g transform="translate(28, 150)">
+        <text x="0" y="0" font-size="14" font-weight="700" fill="#475569">THÔNG TIN BỆNH NHÂN</text>
+        <g transform="translate(0, 14)">
+          <rect width="404" height="88" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+          <circle cx="44" cy="44" r="26" fill="#FEF3C7"/>
+          <text x="44" y="52" font-size="24" text-anchor="middle">🐱</text>
+          <text x="84" y="34" font-size="16" font-weight="700" fill="#0F172A">Miu Miu</text>
+          <text x="84" y="54" font-size="13" fill="#64748B">Mèo Anh lông ngắn • 2 tuổi • 4.2 kg</text>
+          <text x="84" y="72" font-size="12" font-weight="600" fill="#EF4444">⚠️ Tiền sử: Dị ứng đạm bò</text>
+        </g>
+      </g>
+
+      <!-- Symptoms & Vitals -->
+      <g transform="translate(28, 280)">
+        <text x="0" y="0" font-size="14" font-weight="700" fill="#475569">TRIỆU CHỨNG KHẨN CẤP</text>
+        <g transform="translate(0, 14)">
+          <rect x="0" y="0" width="115" height="32" rx="16" fill="#FEE2E2"/>
+          <text x="57" y="20" font-size="12" font-weight="700" fill="#DC2626" text-anchor="middle">Nôn dịch vàng</text>
+
+          <rect x="125" y="0" width="90" height="32" rx="16" fill="#FEE2E2"/>
+          <text x="170" y="20" font-size="12" font-weight="700" fill="#DC2626" text-anchor="middle">Khó thở</text>
+
+          <rect x="225" y="0" width="100" height="32" rx="16" fill="#FEE2E2"/>
+          <text x="275" y="20" font-size="12" font-weight="700" fill="#DC2626" text-anchor="middle">Nằm li bì</text>
+        </g>
+        <text x="0" y="74" font-size="13" fill="#334155" width="400">Ghi chú: Nôn 3 lần liên tục trong 1 tiếng, nhịp thở nhanh 42 lần/phút, không phản xạ khi gọi tên.</text>
+      </g>
+
+      <!-- Nearest Assigned Hospital -->
+      <g transform="translate(28, 410)">
+        <text x="0" y="0" font-size="14" font-weight="700" fill="#475569">CƠ SỞ Y TẾ TIẾP NHẬN GẦN NHẤT</text>
+        <g transform="translate(0, 14)">
+          <rect width="404" height="150" rx="14" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1.5"/>
+          <g transform="translate(18, 20)">
+            <rect width="40" height="40" rx="8" fill="#10B981"/>
+            <text x="20" y="27" font-size="20" text-anchor="middle">🏥</text>
+            <text x="52" y="18" font-size="16" font-weight="800" fill="#0F172A">PetCare 24h Ba Đình</text>
+            <text x="52" y="36" font-size="13" fill="#64748B">120 Hoàng Hoa Thám, Ba Đình, Hà Nội</text>
+            
+            <rect x="0" y="58" width="170" height="26" rx="6" fill="#DCFCE7"/>
+            <text x="85" y="75" font-size="12" font-weight="700" fill="#166534" text-anchor="middle">⏱ 4 phút • Cách 1.2 km</text>
+
+            <text x="0" y="112" font-size="13" font-weight="600" fill="#15803D">🩺 Bác sĩ phụ trách: BS. Phạm Thị Mai (Đã nhận ca)</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- Action Buttons -->
+      <g transform="translate(28, 640)">
+        <!-- Call Hotline -->
+        <rect width="404" height="54" rx="27" fill="url(#call-grad)"/>
+        <text x="202" y="33" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">📞 GỌI TRỰC TIẾP PHÒNG KHÁM</text>
+        <text x="202" y="50" font-size="11" fill="#DCFCE7" text-anchor="middle">Hotline 24/7: 1900 6868</text>
+
+        <!-- Route Directions -->
+        <g transform="translate(0, 72)">
+          <rect width="404" height="48" rx="24" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+          <text x="202" y="30" font-size="15" font-weight="700" fill="#1E293B" text-anchor="middle">🗺️ Mở chỉ đường Google Maps</text>
+        </g>
+
+        <!-- Cancel Request -->
+        <text x="202" y="150" font-size="13" font-weight="600" fill="#94A3B8" text-anchor="middle">Hủy yêu cầu cấp cứu</text>
+      </g>
+    </g>
+
+    <!-- MAP CONTROLS OVERLAY (BOTTOM RIGHT) -->
+    <g id="Map-Controls" transform="translate(1360, 800)" filter="url(#map-shadow)">
+      <rect width="48" height="96" rx="12" fill="#FFFFFF"/>
+      <text x="24" y="34" font-size="22" font-weight="700" fill="#334155" text-anchor="middle">+</text>
+      <line x1="8" y1="48" x2="40" y2="48" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="24" y="80" font-size="22" font-weight="700" fill="#334155" text-anchor="middle">−</text>
+    </g>
+  </g>
+</svg>

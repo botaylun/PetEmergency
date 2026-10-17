@@ -1,0 +1,260 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="1440" height="1024" style="background:#0B132B;font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <filter id="doc-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+    <filter id="alert-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#EF4444" flood-opacity="0.5" />
+    </filter>
+    <linearGradient id="doc-nav" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1C2541"/>
+      <stop offset="100%" stop-color="#0B132B"/>
+    </linearGradient>
+    <linearGradient id="accept-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- TOP DOCTOR BAR -->
+  <g id="Doctor-Navbar" filter="url(#doc-shadow)">
+    <rect width="1440" height="72" fill="#1C2541" stroke="#3A506B" stroke-width="0.5"/>
+    
+    <!-- Branding -->
+    <g transform="translate(48, 16)">
+      <circle cx="20" cy="20" r="20" fill="#EF4444" fill-opacity="0.2"/>
+      <text x="20" y="27" font-size="20" text-anchor="middle">🩺</text>
+      <text x="50" y="26" font-size="20" font-weight="800" fill="#FFFFFF">PetCare<tspan fill="#EF4444"> DOCTOR</tspan> <tspan font-weight="400" font-size="13" fill="#8892B0">| Bảng Điều Phối Cấp Cứu</tspan></text>
+    </g>
+
+    <!-- Center: Online Dispatch Mode Toggle -->
+    <g transform="translate(580, 16)">
+      <rect width="280" height="40" rx="20" fill="#0B132B" stroke="#10B981" stroke-width="1.5"/>
+      <circle cx="24" cy="20" r="6" fill="#10B981"/>
+      <text x="40" y="25" font-size="13" font-weight="700" fill="#6EE7B7">ĐANG TRỰC CẤP CỨU (BẬT)</text>
+      <!-- Switch Toggle knob -->
+      <rect x="232" y="6" width="40" height="28" rx="14" fill="#10B981"/>
+      <circle cx="258" cy="20" r="10" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Doctor Profile Chip -->
+    <g transform="translate(1120, 14)">
+      <circle cx="22" cy="22" r="22" fill="#3B82F6"/>
+      <text x="22" y="28" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">PM</text>
+      <circle cx="36" cy="34" r="5" fill="#10B981" stroke="#1C2541" stroke-width="2"/>
+      <text x="54" y="20" font-size="15" font-weight="700" fill="#FFFFFF">BS. Phạm Thị Mai</text>
+      <text x="54" y="36" font-size="12" fill="#8892B0">PetCare 24h Ba Đình (Xác thực ✓)</text>
+    </g>
+  </g>
+
+  <!-- KPI METRICS ROW (4 CARDS) -->
+  <g id="Doctor-KPIs" transform="translate(48, 96)">
+    <!-- KPI 1 -->
+    <g transform="translate(0, 0)" filter="url(#doc-shadow)">
+      <rect width="316" height="100" rx="16" fill="#1C2541" stroke="#3A506B" stroke-width="1"/>
+      <g transform="translate(24, 22)">
+        <text x="0" y="14" font-size="13" font-weight="600" fill="#8892B0">CA ĐÃ XỬ LÝ THÁNG NÀY</text>
+        <text x="0" y="52" font-size="32" font-weight="800" fill="#FFFFFF">48 <tspan font-size="14" font-weight="600" fill="#10B981">ca (+12%)</tspan></text>
+        <circle cx="230" cy="28" r="24" fill="#3B82F6" fill-opacity="0.15"/>
+        <text x="230" y="36" font-size="22" text-anchor="middle">🏥</text>
+      </g>
+    </g>
+
+    <!-- KPI 2 -->
+    <g transform="translate(342, 0)" filter="url(#doc-shadow)">
+      <rect width="316" height="100" rx="16" fill="#1C2541" stroke="#3A506B" stroke-width="1"/>
+      <g transform="translate(24, 22)">
+        <text x="0" y="14" font-size="13" font-weight="600" fill="#8892B0">ĐÁNH GIÁ CHUYÊN MÔN</text>
+        <text x="0" y="52" font-size="32" font-weight="800" fill="#FBBF24">4.9 <tspan font-size="16">⭐</tspan> <tspan font-size="13" font-weight="500" fill="#8892B0">(128 bài)</tspan></text>
+        <circle cx="230" cy="28" r="24" fill="#FBBF24" fill-opacity="0.15"/>
+        <text x="230" y="36" font-size="22" text-anchor="middle">⭐</text>
+      </g>
+    </g>
+
+    <!-- KPI 3 -->
+    <g transform="translate(684, 0)" filter="url(#doc-shadow)">
+      <rect width="316" height="100" rx="16" fill="#1C2541" stroke="#3A506B" stroke-width="1"/>
+      <g transform="translate(24, 22)">
+        <text x="0" y="14" font-size="13" font-weight="600" fill="#8892B0">CA SOS KHẨN CẤP HÔM NAY</text>
+        <text x="0" y="52" font-size="32" font-weight="800" fill="#EF4444">06 <tspan font-size="14" font-weight="600" fill="#FCA5A5">ca chờ xử lý</tspan></text>
+        <circle cx="230" cy="28" r="24" fill="#EF4444" fill-opacity="0.15"/>
+        <text x="230" y="36" font-size="22" text-anchor="middle">🚨</text>
+      </g>
+    </g>
+
+    <!-- KPI 4 -->
+    <g transform="translate(1026, 0)" filter="url(#doc-shadow)">
+      <rect width="318" height="100" rx="16" fill="#1C2541" stroke="#3A506B" stroke-width="1"/>
+      <g transform="translate(24, 22)">
+        <text x="0" y="14" font-size="13" font-weight="600" fill="#8892B0">TỐC ĐỘ PHẢN HỒI TB</text>
+        <text x="0" y="52" font-size="32" font-weight="800" fill="#10B981">45 <tspan font-size="16" font-weight="600">giây</tspan></text>
+        <circle cx="230" cy="28" r="24" fill="#10B981" fill-opacity="0.15"/>
+        <text x="230" y="36" font-size="22" text-anchor="middle">⚡</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- MAIN SPLIT WORKSPACE -->
+  <!-- LEFT: INCOMING SOS DISPATCH QUEUE (560px) -->
+  <g id="Incoming-SOS-Queue" transform="translate(48, 220)">
+    
+    <!-- Section Header -->
+    <g transform="translate(0, 0)">
+      <circle cx="8" cy="8" r="6" fill="#EF4444"/>
+      <text x="22" y="14" font-size="18" font-weight="800" fill="#FFFFFF">HÀNG ĐỢI CẤP CỨU TRỰC TIẾP (LIVE QUEUE)</text>
+      <text x="500" y="14" font-size="13" font-weight="600" fill="#6EE7B7">Radar quét 5km</text>
+    </g>
+
+    <!-- CASE 1: ACTIVE INCOMING SOS (URGENT HIGHLIGHTED) -->
+    <g id="Case-Card-Active" transform="translate(0, 36)" filter="url(#alert-glow)">
+      <rect width="560" height="340" rx="16" fill="#1C2541" stroke="#EF4444" stroke-width="2"/>
+      
+      <!-- Card Head -->
+      <g transform="translate(24, 20)">
+        <rect width="110" height="26" rx="13" fill="#EF4444"/>
+        <text x="55" y="18" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">🚨 MỚI PHÁT</text>
+        <text x="124" y="18" font-size="15" font-weight="700" fill="#FFFFFF">#SOS-8921 • Cách 1.2 km (4 phút)</text>
+        <text x="440" y="18" font-size="12" fill="#8892B0">2 phút trước</text>
+      </g>
+
+      <line x1="24" y1="60" x2="536" y2="60" stroke="#3A506B" stroke-width="1"/>
+
+      <!-- Patient Info row -->
+      <g transform="translate(24, 80)">
+        <circle cx="30" cy="30" r="28" fill="#FEF3C7"/>
+        <text x="30" y="38" font-size="28" text-anchor="middle">🐱</text>
+        <text x="70" y="24" font-size="18" font-weight="800" fill="#FFFFFF">Bé Miu Miu <tspan font-size="14" font-weight="500" fill="#94A3B8">(Mèo Anh lông ngắn)</tspan></text>
+        <text x="70" y="46" font-size="13" fill="#CBD5E1">Chủ nuôi: Lê Công Tuấn Kiệt • SĐT: 0987.654.321</text>
+        <text x="70" y="68" font-size="12" fill="#8892B0">📍 120 Hoàng Hoa Thám, Ba Đình, Hà Nội</text>
+      </g>
+
+      <!-- Symptoms & Triaging -->
+      <g transform="translate(24, 180)">
+        <rect width="90" height="26" rx="6" fill="#EF4444" fill-opacity="0.2"/>
+        <text x="45" y="18" font-size="12" font-weight="700" fill="#FCA5A5" text-anchor="middle">Nôn bọt vàng</text>
+
+        <rect x="100" y="0" width="80" height="26" rx="6" fill="#EF4444" fill-opacity="0.2"/>
+        <text x="140" y="18" font-size="12" font-weight="700" fill="#FCA5A5" text-anchor="middle">Khó thở</text>
+
+        <rect x="190" y="0" width="110" height="26" rx="6" fill="#F59E0B" fill-opacity="0.2"/>
+        <text x="245" y="18" font-size="12" font-weight="700" fill="#FDE68A" text-anchor="middle">Dị ứng đạm bò</text>
+
+        <text x="0" y="54" font-size="13" fill="#E2E8F0">AI Triage: Khả năng viêm tụy cấp hoặc dị vật đường tiêu hóa. Cần siêu âm & đặt catheter tĩnh mạch ngay khi tiếp nhận.</text>
+      </g>
+
+      <!-- Action Buttons -->
+      <g transform="translate(24, 268)">
+        <!-- Accept Button (Large Green) -->
+        <rect width="360" height="50" rx="25" fill="url(#accept-grad)"/>
+        <text x="180" y="31" font-size="16" font-weight="800" fill="#FFFFFF" text-anchor="middle">🩺 TIẾP NHẬN CA CẤP CỨU NGAY</text>
+
+        <!-- Forward / Decline -->
+        <rect x="376" y="0" width="136" height="50" rx="25" fill="#3A506B" fill-opacity="0.5"/>
+        <text x="444" y="31" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Chuyển viện</text>
+      </g>
+    </g>
+
+    <!-- CASE 2: SECOND QUEUED SOS -->
+    <g id="Case-Card-Queued" transform="translate(0, 400)" filter="url(#doc-shadow)">
+      <rect width="560" height="180" rx="16" fill="#1C2541" stroke="#3A506B" stroke-width="1"/>
+      
+      <g transform="translate(24, 20)">
+        <rect width="80" height="24" rx="12" fill="#F59E0B"/>
+        <text x="40" y="16" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">CHỜ XỬ LÝ</text>
+        <text x="94" y="17" font-size="15" font-weight="700" fill="#FFFFFF">#SOS-8920 • Bé Lu (Chó Poodle • 3 tuổi)</text>
+        <text x="440" y="17" font-size="12" fill="#8892B0">8 phút trước</text>
+      </g>
+
+      <g transform="translate(24, 64)">
+        <text x="0" y="16" font-size="13" fill="#CBD5E1">Triệu chứng: Quẹt xe máy trầy xước chân trước, chảy máu nhẹ, cử động khó khăn.</text>
+        <text x="0" y="40" font-size="12" fill="#8892B0">📍 45 Đội Cấn, Ba Đình • Cách 2.4 km • SĐT: 0912.333.444</text>
+      </g>
+
+      <g transform="translate(24, 126)">
+        <rect width="240" height="38" rx="19" fill="#3A506B"/>
+        <text x="120" y="24" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Xem bệnh án & tiếp nhận</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT: REALTIME DISPATCH MAP & QUICK TRIAGE (748px) -->
+  <g id="Dispatch-Map-Panel" transform="translate(644, 220)" filter="url(#doc-shadow)">
+    
+    <!-- Top Card Header -->
+    <rect width="748" height="760" rx="20" fill="#1C2541" stroke="#3A506B" stroke-width="1"/>
+    
+    <g transform="translate(28, 24)">
+      <text x="0" y="14" font-size="18" font-weight="800" fill="#FFFFFF">BẢN ĐỒ ĐIỀU PHỐI ĐƯỜNG ĐI (ROUTING DISPATCH)</text>
+      <text x="0" y="34" font-size="12" fill="#8892B0">Hệ thống OSRM tối ưu hóa lộ trình xe cấp cứu tránh các điểm ùn tắc</text>
+    </g>
+
+    <!-- Embedded Mini Map Visualization -->
+    <g transform="translate(28, 70)">
+      <rect width="692" height="420" rx="14" fill="#0F172A" stroke="#3A506B" stroke-width="1"/>
+      
+      <!-- Roads -->
+      <g stroke="#334155" stroke-width="8" stroke-linecap="round" fill="none">
+        <path d="M 50 150 Q 250 180 450 140 T 650 200"/>
+        <path d="M 200 40 L 200 380"/>
+        <path d="M 500 40 L 500 380"/>
+      </g>
+
+      <!-- Active Navigation Route -->
+      <path d="M 200 160 Q 350 220 500 240" fill="none" stroke="#10B981" stroke-width="6"/>
+      <path d="M 200 160 Q 350 220 500 240" fill="none" stroke="#A7F3D0" stroke-width="2"/>
+
+      <!-- Clinic Start Pin -->
+      <g transform="translate(200, 160)">
+        <circle cx="0" cy="0" r="18" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="0" y="6" font-size="14" text-anchor="middle">🏥</text>
+        <rect x="-60" y="-36" width="120" height="24" rx="6" fill="#1E293B"/>
+        <text x="0" y="-20" font-size="11" font-weight="700" fill="#93C5FD" text-anchor="middle">PetCare 24h (Bạn)</text>
+      </g>
+
+      <!-- Patient Destination Pin -->
+      <g transform="translate(500, 240)">
+        <circle cx="0" cy="0" r="22" fill="#EF4444" stroke="#FFFFFF" stroke-width="3"/>
+        <text x="0" y="7" font-size="16" text-anchor="middle">🚨</text>
+        <rect x="-70" y="30" width="140" height="26" rx="6" fill="#EF4444"/>
+        <text x="0" y="47" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Bé Miu Miu (Cần đón)</text>
+      </g>
+
+      <!-- Floating ETA Badge -->
+      <g transform="translate(310, 170)">
+        <rect width="110" height="32" rx="16" fill="#10B981"/>
+        <text x="55" y="21" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">⏱ 4 phút (1.2km)</text>
+      </g>
+    </g>
+
+    <!-- QUICK TRIAGE CHECKLIST & DIRECT CHAT / CALL -->
+    <g transform="translate(28, 514)">
+      <text x="0" y="16" font-size="15" font-weight="700" fill="#FFFFFF">CHUẨN BỊ PHÒNG CẤP CỨU & VẬT TƯ:</text>
+      
+      <!-- Checklist items -->
+      <g transform="translate(0, 32)">
+        <rect width="330" height="36" rx="8" fill="#0B132B" stroke="#3A506B" stroke-width="1"/>
+        <text x="16" y="23" font-size="13" font-weight="600" fill="#6EE7B7">✓ Máy thở Oxy & lồng ủ ấm</text>
+
+        <rect x="350" y="0" width="342" height="36" rx="8" fill="#0B132B" stroke="#3A506B" stroke-width="1"/>
+        <text x="366" y="23" font-size="13" font-weight="600" fill="#6EE7B7">✓ Bộ truyền dịch ringer lactate tĩnh mạch</text>
+      </g>
+
+      <g transform="translate(0, 80)">
+        <rect width="330" height="36" rx="8" fill="#0B132B" stroke="#3A506B" stroke-width="1"/>
+        <text x="16" y="23" font-size="13" font-weight="600" fill="#6EE7B7">✓ Bộ test nhanh giảm bạch cầu (FPV)</text>
+
+        <rect x="350" y="0" width="342" height="36" rx="8" fill="#0B132B" stroke="#3A506B" stroke-width="1"/>
+        <text x="366" y="23" font-size="13" font-weight="600" fill="#6EE7B7">✓ Chuẩn bị máy siêu âm Doppler màu</text>
+      </g>
+
+      <!-- Communication Action -->
+      <g transform="translate(0, 140)">
+        <rect width="330" height="52" rx="26" fill="#10B981"/>
+        <text x="165" y="32" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle">📞 Gọi cho chủ nuôi ngay</text>
+
+        <rect x="350" y="0" width="342" height="52" rx="26" fill="#3B82F6"/>
+        <text x="521" y="32" font-size="15" font-weight="800" fill="#FFFFFF" text-anchor="middle">💬 Nhắn tin hướng dẫn sơ cứu</text>
+      </g>
+    </g>
+  </g>
+</svg>

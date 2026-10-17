@@ -1,0 +1,312 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="1440" height="1024" style="background:#F8FAFC;font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0F172A" flood-opacity="0.06" />
+    </filter>
+    <linearGradient id="qr-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="cover-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+
+  <!-- NAVBAR -->
+  <g id="Navbar" filter="url(#card-shadow)">
+    <rect width="1440" height="64" fill="#FFFFFF"/>
+    <g transform="translate(48, 16)">
+      <text x="0" y="22" font-size="20">🐾</text>
+      <text x="32" y="22" font-size="18" font-weight="800" fill="#0F172A">PetCare<tspan fill="#EF4444"> AI</tspan></text>
+      <text x="140" y="22" font-size="14" fill="#64748B">/ Hồ sơ thú cưng / <tspan font-weight="700" fill="#0F172A">Miu Miu</tspan></text>
+    </g>
+    <!-- Back to pet list -->
+    <g transform="translate(1260, 16)">
+      <rect width="130" height="34" rx="17" fill="#F1F5F9"/>
+      <text x="65" y="22" font-size="13" font-weight="600" fill="#334155" text-anchor="middle">← Danh sách pet</text>
+    </g>
+  </g>
+
+  <!-- PROFILE HEADER / COVER (1344 x 220) -->
+  <g id="Profile-Hero" transform="translate(48, 88)" filter="url(#card-shadow)">
+    <rect width="1344" height="200" rx="16" fill="url(#cover-grad)"/>
+    <circle cx="1200" cy="80" r="120" fill="#FFFFFF" fill-opacity="0.04"/>
+
+    <!-- Pet Avatar (overlapping bottom) -->
+    <g transform="translate(48, 80)">
+      <circle cx="60" cy="60" r="62" fill="#FFFFFF"/>
+      <circle cx="60" cy="60" r="56" fill="#FEF3C7"/>
+      <text x="60" y="78" font-size="56" text-anchor="middle">🐱</text>
+      <!-- Online / Health status dot -->
+      <circle cx="102" cy="102" r="10" fill="#10B981" stroke="#FFFFFF" stroke-width="3"/>
+    </g>
+
+    <!-- Pet Details Header -->
+    <g transform="translate(190, 96)">
+      <text x="0" y="0" font-size="26" font-weight="800" fill="#FFFFFF">Miu Miu <tspan font-size="18" font-weight="500" fill="#CBD5E1">(Anh lông ngắn - British Shorthair)</tspan></text>
+      <g transform="translate(0, 14)">
+        <rect width="70" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.15"/>
+        <text x="35" y="16" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">♂ Đực</text>
+
+        <rect x="80" y="0" width="100" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.15"/>
+        <text x="130" y="16" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">2 tuổi 4 tháng</text>
+
+        <rect x="190" y="0" width="80" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.15"/>
+        <text x="230" y="16" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">4.2 kg</text>
+
+        <rect x="280" y="0" width="150" height="24" rx="12" fill="#10B981" fill-opacity="0.2"/>
+        <text x="355" y="16" font-size="12" font-weight="700" fill="#86EFAC" text-anchor="middle">✓ ĐÃ TRIỆT SẢN</text>
+      </g>
+    </g>
+
+    <!-- Header Action Buttons -->
+    <g transform="translate(1000, 130)">
+      <rect width="150" height="42" rx="21" fill="#FFFFFF"/>
+      <text x="75" y="26" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle">✏️ Sửa hồ sơ</text>
+
+      <rect x="162" y="0" width="150" height="42" rx="21" fill="#EF4444"/>
+      <text x="237" y="26" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">🚨 Báo cấp cứu</text>
+    </g>
+  </g>
+
+  <!-- CONTENT 2 COLUMNS -->
+  <!-- LEFT COLUMN: DIGITAL MEDICAL QR PASSPORT (380px) -->
+  <g id="Left-Column-Passport" transform="translate(48, 312)">
+    
+    <!-- PASSPORT QR CARD -->
+    <g id="QR-Passport-Card" filter="url(#card-shadow)">
+      <rect width="380" height="480" rx="16" fill="url(#qr-grad)"/>
+      
+      <!-- Card Header -->
+      <g transform="translate(24, 24)">
+        <text x="0" y="16" font-size="14" font-weight="800" fill="#E0E7FF" letter-spacing="1">PETCARE MEDICAL ID</text>
+        <text x="0" y="34" font-size="11" fill="#C7D2FE">Thẻ Y Tế & Cấp Cứu Thông Minh 24/7</text>
+        <text x="290" y="22" font-size="22">🐾</text>
+      </g>
+
+      <!-- WHITE QR CONTAINER -->
+      <g transform="translate(40, 78)">
+        <rect width="300" height="300" rx="14" fill="#FFFFFF"/>
+        
+        <!-- REALISTIC VECTOR QR CODE PATTERN -->
+        <g fill="#1E293B">
+          <!-- Position Detection Patterns (Top-Left) -->
+          <rect x="24" y="24" width="60" height="60" rx="6" fill="#1E293B"/>
+          <rect x="32" y="32" width="44" height="44" rx="4" fill="#FFFFFF"/>
+          <rect x="40" y="40" width="28" height="28" rx="2" fill="#1E293B"/>
+
+          <!-- Top-Right -->
+          <rect x="216" y="24" width="60" height="60" rx="6" fill="#1E293B"/>
+          <rect x="224" y="32" width="44" height="44" rx="4" fill="#FFFFFF"/>
+          <rect x="232" y="40" width="28" height="28" rx="2" fill="#1E293B"/>
+
+          <!-- Bottom-Left -->
+          <rect x="24" y="216" width="60" height="60" rx="6" fill="#1E293B"/>
+          <rect x="32" y="224" width="44" height="44" rx="4" fill="#FFFFFF"/>
+          <rect x="40" y="232" width="28" height="28" rx="2" fill="#1E293B"/>
+
+          <!-- Center Pet Icon Badge in QR -->
+          <circle cx="150" cy="150" r="24" fill="#FFFFFF"/>
+          <circle cx="150" cy="150" r="20" fill="#EF4444"/>
+          <text x="150" y="157" font-size="16" text-anchor="middle" fill="#FFFFFF">🐾</text>
+
+          <!-- QR Data grid dots -->
+          <rect x="100" y="30" width="16" height="16" rx="2"/>
+          <rect x="124" y="30" width="16" height="16" rx="2"/>
+          <rect x="160" y="30" width="30" height="16" rx="2"/>
+          <rect x="100" y="54" width="30" height="16" rx="2"/>
+          <rect x="140" y="54" width="16" height="16" rx="2"/>
+          <rect x="170" y="54" width="24" height="16" rx="2"/>
+          <rect x="100" y="78" width="16" height="30" rx="2"/>
+          <rect x="130" y="78" width="24" height="16" rx="2"/>
+          <rect x="164" y="78" width="20" height="30" rx="2"/>
+          
+          <rect x="30" y="100" width="16" height="24" rx="2"/>
+          <rect x="54" y="100" width="24" height="16" rx="2"/>
+          <rect x="30" y="140" width="30" height="16" rx="2"/>
+          <rect x="70" y="130" width="16" height="30" rx="2"/>
+          <rect x="30" y="170" width="24" height="24" rx="2"/>
+          <rect x="64" y="170" width="16" height="16" rx="2"/>
+
+          <rect x="220" y="100" width="24" height="24" rx="2"/>
+          <rect x="254" y="100" width="20" height="16" rx="2"/>
+          <rect x="220" y="134" width="16" height="30" rx="2"/>
+          <rect x="246" y="134" width="28" height="16" rx="2"/>
+          <rect x="220" y="174" width="34" height="16" rx="2"/>
+          <rect x="264" y="174" width="16" height="30" rx="2"/>
+
+          <rect x="100" y="190" width="16" height="24" rx="2"/>
+          <rect x="130" y="200" width="24" height="16" rx="2"/>
+          <rect x="164" y="190" width="20" height="24" rx="2"/>
+          <rect x="100" y="230" width="30" height="16" rx="2"/>
+          <rect x="140" y="224" width="16" height="30" rx="2"/>
+          <rect x="166" y="230" width="24" height="16" rx="2"/>
+          <rect x="100" y="260" width="24" height="16" rx="2"/>
+          <rect x="134" y="260" width="16" height="16" rx="2"/>
+          <rect x="160" y="260" width="30" height="16" rx="2"/>
+
+          <rect x="200" y="220" width="30" height="16" rx="2"/>
+          <rect x="240" y="220" width="24" height="24" rx="2"/>
+          <rect x="200" y="246" width="16" height="30" rx="2"/>
+          <rect x="226" y="254" width="38" height="16" rx="2"/>
+        </g>
+      </g>
+
+      <!-- Card Footer -->
+      <g transform="translate(24, 396)">
+        <text x="0" y="16" font-size="12" font-weight="700" fill="#FFFFFF">CHỦ THÚ CƯNG: LÊ CÔNG TUẤN KIỆT</text>
+        <text x="0" y="34" font-size="13" font-weight="700" fill="#FDE047">SĐT Khẩn cấp: 0987.654.321</text>
+        <text x="0" y="52" font-size="11" fill="#E0E7FF">Mã Chip: #VN-MC-902318491823</text>
+        <rect x="240" y="14" width="90" height="34" rx="8" fill="#FFFFFF"/>
+        <text x="285" y="36" font-size="12" font-weight="700" fill="#4F46E5" text-anchor="middle">In Thẻ 🖨️</text>
+      </g>
+    </g>
+
+    <!-- CRITICAL ALLERGIES ALERT BOX -->
+    <g transform="translate(0, 500)" filter="url(#card-shadow)">
+      <rect width="380" height="150" rx="16" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
+      <g transform="translate(20, 20)">
+        <text x="0" y="14" font-size="15" font-weight="800" fill="#DC2626">⚠️ LƯU Ý Y TẾ QUAN TRỌNG</text>
+        <text x="0" y="38" font-size="13" fill="#991B1B">• Dị ứng đạm bò: Nổi mẩn & tiêu chảy sau 2h.</text>
+        <text x="0" y="60" font-size="13" fill="#991B1B">• Chống chỉ định: Thuốc nhóm Aminoglycoside.</text>
+        <text x="0" y="82" font-size="13" fill="#991B1B">• Thói quen ăn: Chỉ ăn hạt pate chuyên dụng.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: MEDICAL TIMELINE & CHARTS (936px) -->
+  <g id="Right-Column-Records" transform="translate(456, 312)">
+
+    <!-- TABS -->
+    <g id="Medical-Tabs">
+      <rect width="936" height="48" rx="12" fill="#F1F5F9"/>
+      <rect x="4" y="4" width="220" height="40" rx="10" fill="#FFFFFF" filter="url(#card-shadow)"/>
+      <text x="114" y="29" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">💉 Sổ Tiêm Chủng (3)</text>
+
+      <text x="340" y="29" font-size="14" font-weight="600" fill="#64748B" text-anchor="middle">📈 Biểu Đồ Cân Nặng</text>
+      <text x="560" y="29" font-size="14" font-weight="600" fill="#64748B" text-anchor="middle">💊 Đơn Thuốc & Trị Liệu</text>
+      <text x="780" y="29" font-size="14" font-weight="600" fill="#64748B" text-anchor="middle">🗓️ Lịch Hẹn Bác Sĩ</text>
+    </g>
+
+    <!-- VACCINE SCHEDULE CONTAINER -->
+    <g id="Vaccine-List" transform="translate(0, 68)" filter="url(#card-shadow)">
+      <rect width="936" height="310" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      
+      <!-- Table Header -->
+      <g transform="translate(24, 24)">
+        <text x="0" y="14" font-size="16" font-weight="800" fill="#0F172A">Lịch Trình Tiêm Phòng Định Kỳ</text>
+        <rect x="730" y="-4" width="158" height="34" rx="17" fill="#10B981" fill-opacity="0.1"/>
+        <text x="809" y="18" font-size="12" font-weight="700" fill="#059669" text-anchor="middle">+ Thêm mũi tiêm</text>
+      </g>
+
+      <!-- Row 1: Vaccine 4 bệnh (Completed) -->
+      <g transform="translate(24, 68)">
+        <rect width="888" height="64" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <circle cx="32" cy="32" r="14" fill="#DCFCE7"/>
+        <text x="32" y="38" font-size="14" font-weight="700" fill="#166534" text-anchor="middle">✓</text>
+        <text x="64" y="26" font-size="15" font-weight="700" fill="#0F172A">Vaccine 4 Bệnh Cho Mèo (FVRCP - Purevax)</text>
+        <text x="64" y="46" font-size="13" fill="#64748B">Phòng ngừa Giảm bạch cầu, Viêm mũi khí quản, Calicivirus, Chlamydia</text>
+        
+        <text x="560" y="36" font-size="13" fill="#334155">Tiêm ngày: <tspan font-weight="600">15/03/2026</tspan></text>
+        <rect x="730" y="17" width="130" height="30" rx="15" fill="#DCFCE7"/>
+        <text x="795" y="36" font-size="12" font-weight="700" fill="#15803D" text-anchor="middle">ĐÃ HOÀN THÀNH</text>
+      </g>
+
+      <!-- Row 2: Vaccine Dại (Completed) -->
+      <g transform="translate(24, 144)">
+        <rect width="888" height="64" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+        <circle cx="32" cy="32" r="14" fill="#DCFCE7"/>
+        <text x="32" y="38" font-size="14" font-weight="700" fill="#166534" text-anchor="middle">✓</text>
+        <text x="64" y="26" font-size="15" font-weight="700" fill="#0F172A">Vaccine Phòng Dại (Rabisin)</text>
+        <text x="64" y="46" font-size="13" fill="#64748B">Phòng bệnh dại bắt buộc theo thông tư thú y</text>
+        
+        <text x="560" y="36" font-size="13" fill="#334155">Tiêm ngày: <tspan font-weight="600">10/04/2026</tspan></text>
+        <rect x="730" y="17" width="130" height="30" rx="15" fill="#DCFCE7"/>
+        <text x="795" y="36" font-size="12" font-weight="700" fill="#15803D" text-anchor="middle">ĐÃ HOÀN THÀNH</text>
+      </g>
+
+      <!-- Row 3: Mũi nhắc lại (Pending / Urgent Alert) -->
+      <g transform="translate(24, 220)">
+        <rect width="888" height="64" rx="10" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1"/>
+        <circle cx="32" cy="32" r="14" fill="#FEF3C7"/>
+        <text x="32" y="38" font-size="14" font-weight="700" fill="#B45309" text-anchor="middle">⏱</text>
+        <text x="64" y="26" font-size="15" font-weight="700" fill="#92400E">Mũi Nhắc Lại 4 Bệnh Năm 2026</text>
+        <text x="64" y="46" font-size="13" fill="#B45309">Dự kiến tiêm: 25/10/2026 (Còn 8 ngày nữa đến hạn)</text>
+        
+        <text x="560" y="36" font-size="13" font-weight="600" fill="#B45309">PetCare 24h Ba Đình</text>
+        <rect x="730" y="17" width="130" height="30" rx="15" fill="#FEF3C7"/>
+        <text x="795" y="36" font-size="12" font-weight="700" fill="#B45309" text-anchor="middle">SẮP ĐẾN HẠN</text>
+      </g>
+    </g>
+
+    <!-- WEIGHT TRACKING CHART CONTAINER -->
+    <g id="Weight-Chart-Container" transform="translate(0, 400)" filter="url(#card-shadow)">
+      <rect width="936" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      
+      <g transform="translate(24, 24)">
+        <text x="0" y="14" font-size="16" font-weight="800" fill="#0F172A">Biểu Đồ Theo Dõi Cân Nặng (6 Tháng Gần Nhất)</text>
+        <text x="0" y="34" font-size="12" fill="#64748B">Cân nặng lý tưởng cho mèo giống Anh lông ngắn: 4.0 - 4.5 kg</text>
+      </g>
+
+      <!-- Grid lines -->
+      <g transform="translate(48, 80)" stroke="#F1F5F9" stroke-width="1">
+        <line x1="0" y1="0" x2="840" y2="0"/>
+        <line x1="0" y1="35" x2="840" y2="35"/>
+        <line x1="0" y1="70" x2="840" y2="70"/>
+        <line x1="0" y1="105" x2="840" y2="105"/>
+        <line x1="0" y1="140" x2="840" y2="140"/>
+      </g>
+
+      <!-- Y Axis Labels -->
+      <g transform="translate(20, 84)" font-size="11" fill="#94A3B8" text-anchor="end">
+        <text x="20" y="0">4.5 kg</text>
+        <text x="20" y="35">4.0 kg</text>
+        <text x="20" y="70">3.5 kg</text>
+        <text x="20" y="105">3.0 kg</text>
+        <text x="20" y="140">2.5 kg</text>
+      </g>
+
+      <!-- Chart Wave / Area (Gradient Fill) -->
+      <defs>
+        <linearGradient id="chart-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.3"/>
+          <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.0"/>
+        </linearGradient>
+      </defs>
+      
+      <!-- Area path -->
+      <path d="M 48 185 Q 216 160 384 125 T 720 95 T 888 78 L 888 220 L 48 220 Z" fill="url(#chart-fill)"/>
+      <!-- Line path -->
+      <path d="M 48 185 Q 216 160 384 125 T 720 95 T 888 78" fill="none" stroke="#3B82F6" stroke-width="3"/>
+
+      <!-- Data Points & Labels -->
+      <g transform="translate(0, 0)">
+        <!-- Point 1 (T5) -->
+        <circle cx="48" cy="185" r="5" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="48" y="240" font-size="12" fill="#64748B" text-anchor="middle">Tháng 5 (2.8kg)</text>
+
+        <!-- Point 2 (T6) -->
+        <circle cx="216" cy="160" r="5" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="216" y="240" font-size="12" fill="#64748B" text-anchor="middle">Tháng 6 (3.2kg)</text>
+
+        <!-- Point 3 (T7) -->
+        <circle cx="384" cy="125" r="5" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="384" y="240" font-size="12" fill="#64748B" text-anchor="middle">Tháng 7 (3.6kg)</text>
+
+        <!-- Point 4 (T8) -->
+        <circle cx="552" cy="110" r="5" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="552" y="240" font-size="12" fill="#64748B" text-anchor="middle">Tháng 8 (3.9kg)</text>
+
+        <!-- Point 5 (T9) -->
+        <circle cx="720" cy="95" r="5" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="720" y="240" font-size="12" fill="#64748B" text-anchor="middle">Tháng 9 (4.1kg)</text>
+
+        <!-- Point 6 (T10 Current) -->
+        <circle cx="888" cy="78" r="7" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="888" y="60" font-size="12" font-weight="700" fill="#10B981" text-anchor="middle">4.2 kg (Hiện tại)</text>
+        <text x="888" y="240" font-size="12" font-weight="700" fill="#0F172A" text-anchor="middle">Tháng 10</text>
+      </g>
+    </g>
+  </g>
+</svg>

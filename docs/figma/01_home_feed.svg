@@ -1,0 +1,287 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" width="1440" height="1024" style="background:#F8FAFC;font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <filter id="shadow-sm" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.05" />
+    </filter>
+    <filter id="shadow-md" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.07" />
+    </filter>
+    <filter id="shadow-lg" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#EF4444" flood-opacity="0.25" />
+    </filter>
+    <linearGradient id="hero-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="sos-btn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- NAVBAR -->
+  <g id="Navbar" filter="url(#shadow-sm)">
+    <rect width="1440" height="72" fill="#FFFFFF"/>
+    <!-- Logo -->
+    <g id="Logo" transform="translate(48, 16)">
+      <circle cx="20" cy="20" r="20" fill="#EF4444" fill-opacity="0.1"/>
+      <text x="20" y="27" font-size="22" text-anchor="middle">🐾</text>
+      <text x="50" y="26" font-size="20" font-weight="800" fill="#0F172A">PetCare<tspan fill="#EF4444"> AI</tspan> <tspan font-weight="500" font-size="14" fill="#64748B">24/24</tspan></text>
+    </g>
+
+    <!-- Search Bar -->
+    <g id="Search-Bar" transform="translate(320, 14)">
+      <rect width="420" height="44" rx="22" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="20" y="27" font-size="16" fill="#94A3B8">🔍</text>
+      <text x="48" y="27" font-size="14" fill="#64748B">Tìm bác sĩ, phòng khám, triệu chứng thú cưng...</text>
+      <rect x="340" y="10" width="68" height="24" rx="12" fill="#E2E8F0"/>
+      <text x="374" y="26" font-size="11" font-weight="600" fill="#64748B" text-anchor="middle">Ctrl + K</text>
+    </g>
+
+    <!-- Nav Links -->
+    <g id="Nav-Links" transform="translate(800, 27)" font-size="14" font-weight="600">
+      <text x="0" y="0" fill="#EF4444">Trang chủ</text>
+      <circle cx="28" cy="10" r="2.5" fill="#EF4444"/>
+      <text x="80" y="0" fill="#475569">Diễn đàn</text>
+      <text x="160" y="0" fill="#475569">Bản đồ thú y</text>
+      <text x="260" y="0" fill="#475569">Bác sĩ trực tuyến</text>
+    </g>
+
+    <!-- User Profile & Action -->
+    <g id="User-Actions" transform="translate(1220, 16)">
+      <circle cx="20" cy="20" r="20" fill="#F1F5F9"/>
+      <text x="20" y="26" font-size="16" text-anchor="middle">🔔</text>
+      <circle cx="28" cy="12" r="4" fill="#EF4444"/>
+
+      <!-- User Avatar -->
+      <g transform="translate(60, 0)">
+        <circle cx="20" cy="20" r="20" fill="#3B82F6"/>
+        <text x="20" y="25" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">TK</text>
+        <circle cx="34" cy="30" r="5" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="50" y="25" font-size="14" font-weight="600" fill="#1E293B">Tuấn Kiệt</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- HERO SECTION WITH SOS BUTTON -->
+  <g id="Hero-Banner" transform="translate(48, 96)" filter="url(#shadow-md)">
+    <rect width="1344" height="180" rx="20" fill="url(#hero-grad)"/>
+    <circle cx="1200" cy="90" r="140" fill="#3B82F6" fill-opacity="0.08"/>
+    <circle cx="1050" cy="30" r="70" fill="#EF4444" fill-opacity="0.1"/>
+
+    <!-- Hero Content -->
+    <g transform="translate(48, 42)">
+      <rect width="120" height="26" rx="13" fill="#EF4444" fill-opacity="0.2"/>
+      <circle cx="14" cy="13" r="4" fill="#EF4444"/>
+      <text x="26" y="17" font-size="12" font-weight="700" fill="#FCA5A5">TRỰC CHIẾN 24/7</text>
+      
+      <text x="0" y="60" font-size="28" font-weight="800" fill="#FFFFFF">Trợ lý Y tế & Cấp cứu Thú cưng Khẩn cấp</text>
+      <text x="0" y="90" font-size="15" fill="#94A3B8">Kết nối mạng lưới bác sĩ thú y gần nhất trong 60 giây. Chẩn đoán sơ bộ bằng AI.</text>
+    </g>
+
+    <!-- BIG PULSING SOS BUTTON -->
+    <g id="SOS-Trigger-Button" transform="translate(980, 52)" filter="url(#shadow-lg)">
+      <circle cx="38" cy="38" r="46" fill="#EF4444" fill-opacity="0.25"/>
+      <rect width="280" height="76" rx="38" fill="url(#sos-btn)"/>
+      <circle cx="44" cy="38" r="26" fill="#FFFFFF" fill-opacity="0.2"/>
+      <text x="44" y="47" font-size="28" text-anchor="middle">🚨</text>
+      <text x="90" y="38" font-size="20" font-weight="800" fill="#FFFFFF">GỌI CẤP CỨU SOS</text>
+      <text x="90" y="56" font-size="12" font-weight="600" fill="#FECACA">Định vị & Bác sĩ tới ngay</text>
+    </g>
+  </g>
+
+  <!-- CATEGORY TAGS -->
+  <g id="Category-Pills" transform="translate(48, 304)">
+    <g transform="translate(0, 0)">
+      <rect width="90" height="38" rx="19" fill="#0F172A"/>
+      <text x="45" y="24" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Tất cả</text>
+    </g>
+    <g transform="translate(102, 0)">
+      <rect width="110" height="38" rx="19" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="55" y="24" font-size="13" font-weight="600" fill="#334155" text-anchor="middle">🐱 Mèo (Cat)</text>
+    </g>
+    <g transform="translate(224, 0)">
+      <rect width="110" height="38" rx="19" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="55" y="24" font-size="13" font-weight="600" fill="#334155" text-anchor="middle">🐶 Chó (Dog)</text>
+    </g>
+    <g transform="translate(346, 0)">
+      <rect width="140" height="38" rx="19" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
+      <text x="70" y="24" font-size="13" font-weight="700" fill="#DC2626" text-anchor="middle">🚨 Ca cấp cứu gấp</text>
+    </g>
+    <g transform="translate(498, 0)">
+      <rect width="120" height="38" rx="19" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="60" y="24" font-size="13" font-weight="600" fill="#334155" text-anchor="middle">💉 Tiêm phòng</text>
+    </g>
+    <g transform="translate(630, 0)">
+      <rect width="130" height="38" rx="19" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="65" y="24" font-size="13" font-weight="600" fill="#334155" text-anchor="middle">🥣 Dinh dưỡng</text>
+    </g>
+  </g>
+
+  <!-- MAIN CONTENT: 2 COLUMNS -->
+  <!-- LEFT: FORUM FEED (900px) -->
+  <g id="Forum-Feed" transform="translate(48, 366)">
+
+    <!-- POST CARD 1 (SICK CAT EMERGENCY WITH DOCTOR BADGE) -->
+    <g id="Post-Card-1" filter="url(#shadow-sm)">
+      <rect width="880" height="290" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      
+      <!-- Author row -->
+      <g transform="translate(24, 20)">
+        <circle cx="22" cy="22" r="22" fill="#E0E7FF"/>
+        <text x="22" y="28" font-size="16" font-weight="700" fill="#4338CA" text-anchor="middle">HL</text>
+        <text x="56" y="20" font-size="15" font-weight="700" fill="#0F172A">Hoàng Lan</text>
+        <text x="56" y="38" font-size="12" fill="#94A3B8">15 phút trước • Hà Nội</text>
+        
+        <!-- Pet Badge -->
+        <g transform="translate(560, 4)">
+          <rect width="250" height="32" rx="16" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+          <text x="14" y="21" font-size="14">🐾</text>
+          <text x="36" y="21" font-size="13" font-weight="600" fill="#0F172A">Miu Miu <tspan font-weight="400" fill="#64748B">(Mèo Anh lông ngắn • 2T)</tspan></text>
+        </g>
+      </g>
+
+      <!-- Post Title & Content -->
+      <g transform="translate(24, 84)">
+        <text x="0" y="0" font-size="18" font-weight="700" fill="#DC2626">Cần tư vấn gấp: Mèo nôn dịch vàng bọt trắng liên tục từ sáng</text>
+        <text x="0" y="26" font-size="14" fill="#334155" width="830">Bé Miu sáng nay bỏ ăn, nôn 3 lần ra dịch vàng có bọt. Người hơi ấm và nằm li bì trong góc, không chịu uống nước. Cho mình hỏi đây có phải dấu hiệu tắc ruột hay viêm dạ dày cấp không? Có nên cho uống thuốc gì tạm thời không ạ?</text>
+      </g>
+
+      <!-- Pinned Doctor Advice Box -->
+      <g id="Doctor-Advice-Box" transform="translate(24, 150)">
+        <rect width="832" height="74" rx="10" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1"/>
+        <g transform="translate(16, 16)">
+          <circle cx="16" cy="16" r="16" fill="#10B981"/>
+          <text x="16" y="21" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">BS</text>
+          <text x="42" y="16" font-size="13" font-weight="700" fill="#166534">BS. Phạm Thị Mai <tspan font-weight="500" fill="#15803D">• Bệnh viện PetCare 24h</tspan></text>
+          <rect x="340" y="2" width="90" height="20" rx="10" fill="url(#badge-grad)"/>
+          <text x="385" y="16" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">✓ ĐÃ XÁC THỰC</text>
+          <text x="42" y="38" font-size="13" fill="#14532D">KHÔNG tự ý cho mèo uống thuốc hạ sốt người (Panadol). Giữ ấm, quan sát niêm mạc miệng và đưa đến phòng khám cấp cứu gần nhất để siêu âm ổ bụng.</text>
+        </g>
+      </g>
+
+      <!-- Card Footer Actions -->
+      <g transform="translate(24, 246)">
+        <text x="0" y="16" font-size="13" fill="#64748B">❤️ 24 Lượt thích</text>
+        <text x="120" y="16" font-size="13" fill="#64748B">💬 8 Bình luận</text>
+        <text x="240" y="16" font-size="13" fill="#64748B">↗️ Chia sẻ</text>
+        <rect x="710" y="0" width="122" height="28" rx="14" fill="#EF4444" fill-opacity="0.1"/>
+        <text x="771" y="18" font-size="12" font-weight="700" fill="#DC2626" text-anchor="middle">🚨 Ca cần xử lý gấp</text>
+      </g>
+    </g>
+
+    <!-- POST CARD 2 (COMMUNITY CARE) -->
+    <g id="Post-Card-2" transform="translate(0, 314)" filter="url(#shadow-sm)">
+      <rect width="880" height="230" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      
+      <!-- Author row -->
+      <g transform="translate(24, 20)">
+        <circle cx="22" cy="22" r="22" fill="#FEF3C7"/>
+        <text x="22" y="28" font-size="16" font-weight="700" fill="#D97706" text-anchor="middle">TB</text>
+        <text x="56" y="20" font-size="15" font-weight="700" fill="#0F172A">Trần Bảo</text>
+        <text x="56" y="38" font-size="12" fill="#94A3B8">1 giờ trước • TP. Hồ Chí Minh</text>
+      </g>
+
+      <!-- Post Content -->
+      <g transform="translate(24, 84)">
+        <text x="0" y="0" font-size="17" font-weight="700" fill="#0F172A">Lịch tiêm nhắc lại vaccine 4 bệnh cho mèo trưởng thành</text>
+        <text x="0" y="26" font-size="14" fill="#334155">Các sen cho mình hỏi mèo nhà mình tròn 1 năm tuổi thì tiêm mũi nhắc lại cách mũi cũ bao lâu là tốt nhất? Có cần xét nghiệm kháng thể trước khi tiêm không ạ?</text>
+      </g>
+
+      <!-- Tags & Footer -->
+      <g transform="translate(24, 180)">
+        <rect width="80" height="24" rx="12" fill="#F1F5F9"/>
+        <text x="40" y="16" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">#tiemphong</text>
+        <rect x="90" y="0" width="80" height="24" rx="12" fill="#F1F5F9"/>
+        <text x="130" y="16" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">#suckhoe</text>
+        
+        <text x="650" y="16" font-size="13" fill="#64748B">❤️ 45 Thích</text>
+        <text x="740" y="16" font-size="13" fill="#64748B">💬 14 Trả lời</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT SIDEBAR (416px) -->
+  <g id="Right-Sidebar" transform="translate(976, 366)">
+
+    <!-- DOCTOR ON-CALL CARD -->
+    <g id="Doctors-Online-Widget" filter="url(#shadow-sm)">
+      <rect width="416" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      
+      <!-- Widget Header -->
+      <g transform="translate(20, 24)">
+        <circle cx="8" cy="8" r="5" fill="#10B981"/>
+        <text x="22" y="12" font-size="16" font-weight="700" fill="#0F172A">Bác sĩ Thú y Trực tuyến</text>
+        <text x="320" y="12" font-size="13" font-weight="600" fill="#EF4444">Xem tất cả</text>
+      </g>
+
+      <!-- Doctor 1 -->
+      <g transform="translate(20, 68)">
+        <circle cx="24" cy="24" r="24" fill="#DBEAFE"/>
+        <text x="24" y="30" font-size="16" text-anchor="middle">👩‍⚕️</text>
+        <circle cx="38" cy="38" r="5" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="60" y="20" font-size="15" font-weight="700" fill="#0F172A">BS. Phạm Thị Mai</text>
+        <text x="60" y="38" font-size="12" fill="#64748B">Cấp cứu nội khoa • PetCare 24h</text>
+        <rect x="290" y="10" width="86" height="30" rx="15" fill="#EF4444" fill-opacity="0.1"/>
+        <text x="333" y="29" font-size="12" font-weight="700" fill="#DC2626" text-anchor="middle">Liên hệ</text>
+      </g>
+
+      <line x1="20" y1="140" x2="396" y2="140" stroke="#F1F5F9" stroke-width="1"/>
+
+      <!-- Doctor 2 -->
+      <g transform="translate(20, 158)">
+        <circle cx="24" cy="24" r="24" fill="#DCFCE7"/>
+        <text x="24" y="30" font-size="16" text-anchor="middle">👨‍⚕️</text>
+        <circle cx="38" cy="38" r="5" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="60" y="20" font-size="15" font-weight="700" fill="#0F172A">BS. Trần Quốc Bảo</text>
+        <text x="60" y="38" font-size="12" fill="#64748B">Ngoại khoa & Phẫu thuật</text>
+        <rect x="290" y="10" width="86" height="30" rx="15" fill="#EF4444" fill-opacity="0.1"/>
+        <text x="333" y="29" font-size="12" font-weight="700" fill="#DC2626" text-anchor="middle">Liên hệ</text>
+      </g>
+
+      <line x1="20" y1="228" x2="396" y2="228" stroke="#F1F5F9" stroke-width="1"/>
+
+      <!-- Doctor 3 -->
+      <g transform="translate(20, 246)">
+        <circle cx="24" cy="24" r="24" fill="#FEF3C7"/>
+        <text x="24" y="30" font-size="16" text-anchor="middle">👨‍⚕️</text>
+        <circle cx="38" cy="38" r="5" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+        <text x="60" y="20" font-size="15" font-weight="700" fill="#0F172A">BS. Nguyễn Hoàng Dũng</text>
+        <text x="60" y="38" font-size="12" fill="#64748B">Da liễu & Ký sinh trùng</text>
+        <rect x="290" y="10" width="86" height="30" rx="15" fill="#EF4444" fill-opacity="0.1"/>
+        <text x="333" y="29" font-size="12" font-weight="700" fill="#DC2626" text-anchor="middle">Liên hệ</text>
+      </g>
+    </g>
+
+    <!-- NEARBY VET CLINICS MINI WIDGET -->
+    <g id="Nearby-Clinics-Widget" transform="translate(0, 324)" filter="url(#shadow-sm)">
+      <rect width="416" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <g transform="translate(20, 24)">
+        <text x="0" y="12" font-size="16" font-weight="700" fill="#0F172A">Bệnh viện & Phòng khám gần bạn</text>
+        <text x="320" y="12" font-size="13" font-weight="600" fill="#3B82F6">Mở bản đồ</text>
+      </g>
+
+      <!-- Clinic 1 -->
+      <g transform="translate(20, 64)">
+        <rect width="44" height="44" rx="10" fill="#EFF6FF"/>
+        <text x="22" y="28" font-size="20" text-anchor="middle">🏥</text>
+        <text x="56" y="18" font-size="14" font-weight="700" fill="#0F172A">PetCare 24h Ba Đình</text>
+        <text x="56" y="36" font-size="12" fill="#64748B">120 Hoàng Hoa Thám • <tspan fill="#10B981" font-weight="600">Cách 1.2 km</tspan></text>
+      </g>
+
+      <line x1="20" y1="130" x2="396" y2="130" stroke="#F1F5F9" stroke-width="1"/>
+
+      <!-- Clinic 2 -->
+      <g transform="translate(20, 150)">
+        <rect width="44" height="44" rx="10" fill="#F0FDF4"/>
+        <text x="22" y="28" font-size="20" text-anchor="middle">🐾</text>
+        <text x="56" y="18" font-size="14" font-weight="700" fill="#0F172A">Bệnh xá Thú y Hà Nội</text>
+        <text x="56" y="36" font-size="12" fill="#64748B">45 Đội Cấn • <tspan fill="#10B981" font-weight="600">Cách 2.4 km</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
